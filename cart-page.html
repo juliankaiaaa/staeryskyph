@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Staery Sky PH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="logo-container">
+                <div class="logo-circle"></div>
+                <img src="ssph-images/staery-logo.png" alt="Logo" class="logo-img">
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav-links active">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop-page.html">SHOP</a></li>
+                    <li><a href="about-page.html">ABOUT</a></li>
+                    <li><a href="sign-up-page.html">SIGN UP</a></li>
+                    <li class="profile-link"><a href="profile-page.html">PROFILE</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-icons">
+                <a href="profile-page.html" class="profile-icon"><img src="ssph-images/profile-icon.png" alt="Sign In"></a>
+                <a href="cart-page.html" class="cart-icon"><img src="ssph-images/cart-icon.png" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="search-bar-container">
+        <input type="text" class="search-input" placeholder="What are you looking for?">
+        <button class="search-button">
+            <img src="ssph-images/magnifying-icon.png" alt="Search" class="search-icon">
+        </button>
+    </div>
+
+    <main>
+        <div class="cart-container">
+            <h1 class="cart-title">YOUR CART</h1>
+        
+            <div class="cart-header">
+                <div class="cart-column">PRODUCT</div>
+                <div class="cart-column"></div>
+                <div class="cart-column">QUANTITY</div>
+                <div class="cart-column">SUBTOTAL</div>
+            </div>
+            <hr>
+        
+            <div class="cart-item">
+                <div class="cart-column">
+                    <img src="ssph-images/products/lightband-lightstick-set.png" alt="Product 1" class="product-image">
+                </div>
+                <div class="cart-column">
+                    <p class="cart-product-title">(PRE-ORDER) ENHYPEN Lighstick Version 2 and Lightband Set</p>
+                    <p class="cart-product-price">₱4,500</p> 
+                </div>
+                <div class="cart-column">
+                    <div class="product-quantity-cart">
+                        <div class="input-group-cart">
+                            <input type="button" value="-" class="button-minus-cart" data-field="quantity">
+                            <input type="number" value="1" class="quantity-field-cart" name="quantity" readonly>
+                            <input type="button" value="+" class="button-plus-cart" data-field="quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-column">
+                    <div class="cart-column-label">SUBTOTAL:</div> 
+                    <p class="cart-product-total">₱4,500.00</p>
+                </div>
+            </div>
+            <hr>
+            
+            <div class="cart-item">
+                <div class="cart-column">
+                    <img src="ssph-images/products/lightstick.png" alt="Product 2" class="product-image">
+                </div>
+                <div class="cart-column">
+                    <p class="cart-product-title"><strong>(PRE-ORDER)</strong> ENHYPEN Lighstick Version 2</p>
+                    <p class="cart-product-price">₱2,500</p> 
+                </div>
+                <div class="cart-column">
+                    <div class="product-quantity-cart">
+                        <div class="input-group-cart">
+                            <input type="button" value="-" class="button-minus-cart" data-field="quantity">
+                            <input type="number" value="1" class="quantity-field-cart" name="quantity" readonly>
+                            <input type="button" value="+" class="button-plus-cart" data-field="quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-column">
+                    <div class="cart-column-label">SUBTOTAL:</div>
+                    <p class="cart-product-total">₱2,500.00</p>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-details">
+                    <p class="estimated-total">ESTIMATED TOTAL: ₱0.00</p>
+                    <a href="checkout-page.html" class="checkout-button">CHECK OUT</a>
+                </div>
+            </div>            
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>HELP</h3>
+                <p>You can call (+63)912 345 6789 or email us at <a href="mailto:contactssph@gmail.com">contactssph@gmail.com</a>.</p>
+            </div>
+            <div class="footer-column">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="return-page.html">Return Policy</a></li>
+                    <li><a href="privacy-page.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions-page.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-3">
+            </div>
+            <div class="footer-column">
+                <h3>STAY UP TO DATE</h3>
+                <p>Promotions, new products, and sales. Directly to your inbox.</p>
+                <div class="signup-container">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter your email..." required>
+                    <button class="newsletter-signup-button">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container-2">
+            <div class="footer-column-2">
+                <p>Amber Kaia Rebusa</p>
+                <p class="copyright-footer">All Rights Reserved, 2024.</p>
+            </div>
+            <div class="footer-column-2">
+            </div>
+            <div class="footer-column-3">
+            </div>
+            <div class="footer-column-2">
+                <a href="https://x.com/staeryskyph"><img src="ssph-images/twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                <a href="https://instagram.com/staeryskyph"><img src="ssph-images/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="ssph.js"></script>
+</body>
+</html>

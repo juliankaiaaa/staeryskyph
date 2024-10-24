@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Staery Sky PH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="logo-container">
+                <div class="logo-circle"></div>
+                <img src="ssph-images/staery-logo.png" alt="Logo" class="logo-img">
+            </div>
+
+            <div class="nav-items">
+                <ul class="nav-links active">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop-page.html">SHOP</a></li>
+                    <li><a href="about-page.html">ABOUT</a></li>
+                    <li><a href="sign-up-page.html">SIGN UP</a></li>
+                    <li class="profile-link"><a href="profile-page.html">PROFILE</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-icons">
+                <a href="profile-page.html" class="profile-icon"><img src="ssph-images/profile-icon.png" alt="Sign In"></a>
+                <a href="cart-page.html" class="cart-icon"><img src="ssph-images/cart-icon.png" alt="Cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <div class="left-column">
+                <h2 class="contact-label">Contact</h2>
+                <input type="email" placeholder="Email" required>
+
+                <h2 class="shipping-label">Shipping Information</h2>
+                <label for="country">Country/Region</label>
+                <input type="text" id="country" required>
+
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name" required>
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name" required>
+                
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Street Address" required>
+
+                <label for="barangay">Barangay</label>
+                <input type="text" id="barangay" required>
+
+                <label for="postal-code">Postal Code</label>
+                <input type="text" id="postal-code" placeholder="Postal Code" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City" required>
+
+                <label for="region">Region</label>
+                <input type="text" id="region" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone" required>
+
+                <h2>Shipping Method</h2>
+                <div class="shipping-method">
+                    <label><input type="radio" name="shipping" value="standard" checked> Standard Shipping</label>
+                </div>
+
+                <h2>Payment Method</h2>
+                <div class="payment-method-cod">
+                    <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery (COD)</label><br>
+                </div>
+                <div class="payment-method-ol">
+                    <label><input type="radio" name="payment" value="online"> Online Payment</label>
+                </div>
+                <a href="confirmation-page.html">
+                    <button class="checkout-page-button">COMPLETE ORDER</button>
+                </a>
+            </div>
+
+            <div class="right-column">
+                <h2 class="order-summary-header">Order Summary</h2>
+                <div class="order-summary">
+                    <div class="order-items">
+                        <img src="ssph-images/products/lightband-lightstick-set.png" alt="Product Image">
+                        <div class="label-checkout">
+                            <p><strong>(PRE-ORDER)</strong> Lightband & Lightstick Version 2 (SET)</p>
+                            <p>₱2,500</p>
+                            <p>Qty: 1</p>
+                        </div>
+                    </div>
+                    <div class="order-items">
+                        <img src="ssph-images/products/lightstick.png" alt="Product Image">
+                        <div class="label-checkout">
+                            <p><strong>(PRE-ORDER)</strong> ENHYPEN Lightstick Version 2</p>
+                            <p>₱2,500</p>
+                            <p>Qty: 1</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="totals">
+                        <div>
+                            <p>Subtotal:</p>
+                            <p>
+                                <a href="sf-table.html" class="shipping-fee-link">Shipping Fee:</a>
+                            </p>                 
+                            <p class="total-label">Total:</p>
+                        </div>
+                        <div>
+                            <p>₱7,000</p>
+                            <p>₱190</p>
+                            <p class="total-label">₱7,190</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>HELP</h3>
+                <p>You can call (+63)912 345 6789 or email us at <a href="mailto:contactssph@gmail.com">contactssph@gmail.com</a>.</p>
+            </div>
+            <div class="footer-column">
+                <h3>POLICIES</h3>
+                <ul>
+                    <li><a href="return-page.html">Return Policy</a></li>
+                    <li><a href="privacy-page.html">Privacy Policy</a></li>
+                    <li><a href="terms-and-conditions-page.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column-3"></div>
+            <div class="footer-column">
+                <h3>STAY UP TO DATE</h3>
+                <p>Promotions, new products, and sales. Directly to your inbox.</p>
+                <div class="signup-container">
+                    <input type="email" class="newsletter-email-input" placeholder="Enter your email..." required>
+                    <button class="newsletter-signup-button">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container-2">
+            <div class="footer-column-2">
+                <p>Amber Kaia Rebusa</p>
+                <p class="copyright-footer">All Rights Reserved, 2024.</p>
+            </div>
+            <div class="footer-column-2"></div>
+            <div class="footer-column-3"></div>
+            <div class="footer-column-2">
+                <a href="https://x.com/staeryskyph"><img src="ssph-images/twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                <a href="https://instagram.com/staeryskyph"><img src="ssph-images/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="ssph.js"></script>
+</body>
+</html>
